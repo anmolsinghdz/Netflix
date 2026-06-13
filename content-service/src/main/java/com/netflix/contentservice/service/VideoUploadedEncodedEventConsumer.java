@@ -44,6 +44,6 @@ public class VideoUploadedEncodedEventConsumer {
             contentService.updateVideoStatus(movieId, VideoStatus.FAILED);
         }
 
-        log.info("")
+        
     }
 }
