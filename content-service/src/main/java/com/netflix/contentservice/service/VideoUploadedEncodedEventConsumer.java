@@ -43,7 +43,5 @@ public class VideoUploadedEncodedEventConsumer {
             String errorMessage = payload.get("errorMessage").toString();
             contentService.updateVideoStatus(movieId, VideoStatus.FAILED);
         }
-
-        
     }
 }
