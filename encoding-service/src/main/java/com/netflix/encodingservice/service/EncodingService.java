@@ -187,6 +187,7 @@ public class EncodingService {
 
         ProcessBuilder processBuilder = new ProcessBuilder(command);
         processBuilder.redirectErrorStream(true);
+        processBuilder.inheritIO();             // We can see what processes are going in background
         Process process = processBuilder.start();
 
         int exitCode=process.waitFor();
