@@ -126,7 +126,7 @@ public class EncodingService {
 
 
         } catch (Exception e) {
-            log.error("Encding failed for movie:{} - {}",  event.getMovieId(), e.getMessage());
+            log.error("Encoding failed for movie:{} - {}",  event.getMovieId(), e.getMessage());
 
             //Publish failure event
             VideoEncodedEvent failureEvent=new VideoEncodedEvent(
